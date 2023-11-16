@@ -1,4 +1,4 @@
--- CREATE TABLE Lesson -- 
+-- CREATE TABLE
 
 /* creating basic tables with a serial 
 number column so the column never repeats
@@ -28,7 +28,7 @@ CREATE TABLE account_job(
 	hire_date TIMESTAMP
 );
 
--- INSERT Lesson --
+-- INSERT
 
 INSERT INTO account(username, password, email, created_on)
 VALUES
@@ -82,7 +82,7 @@ UPDATE account
 SET last_login = CURRENT_TIMESTAMP
 RETURNING email, last_login, created_on;
 
--- DELETE Lesson --
+-- DELETE
 
 INSERT INTO job(job_name)
 VALUES
@@ -115,7 +115,7 @@ INSERT INTO new_info(title)
 VALUES
 ('New Title');
 
--- DROP Lesson --
+-- DROP
 
 ALTER TABLE new_info
 DROP COLUMN people;
@@ -125,7 +125,7 @@ SELECT * FROM new_info;
 ALTER TABLE new_info
 DROP COLUMN IF EXISTS people;
 
--- CHECK Lesson --
+-- CHECK
 
 CREATE TABLE employees(
 	emp_id SERIAL PRIMARY KEY,
